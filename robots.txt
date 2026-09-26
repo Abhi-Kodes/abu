@@ -1,0 +1,6 @@
+User-agent: *
+Allow: /
+Disallow: /scratch/
+Disallow: /.cursor/
+
+Sitemap: https://www.ramkrishanindustries.com/sitemap.xml
