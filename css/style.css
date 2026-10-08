@@ -724,14 +724,25 @@ img { max-width: 100%; display: block; }
   position: relative;
   overflow: hidden;
   background: var(--light-gray);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 12px;
+  box-sizing: border-box;
 }
 .product-card-img img {
-  position: absolute; inset: 0;
-  width: 100%; height: 100%;
-  object-fit: cover;
-  transition: transform 0.6s cubic-bezier(0.4,0,0.2,1);
+  width: 100%;
+  height: 100%;
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+  object-position: center;
+  display: block;
+  transition: transform 0.4s cubic-bezier(0.4, 0, 0.2, 1);
 }
-.product-card:hover .product-card-img img { transform: scale(1.08); }
+.product-card:hover .product-card-img img {
+  transform: scale(1.03);
+}
 .product-card-overlay {
   position: absolute; inset: 0;
   mix-blend-mode: multiply;
@@ -874,14 +885,22 @@ img { max-width: 100%; display: block; }
   max-width: 1200px;
   margin: 0 auto;
   display: grid;
-  grid-template-columns: 1.05fr 0.95fr;
+  grid-template-columns: 1fr;
   gap: 80px;
   align-items: center;
+}
+
+.about-rki__inner:has(.about-rki__panel) {
+  grid-template-columns: 1.05fr 0.95fr;
 }
 
 /* ---------- LEFT COLUMN ---------- */
 
 .about-rki__content {
+  max-width: 820px;
+}
+
+.about-rki__inner:has(.about-rki__panel) .about-rki__content {
   max-width: 560px;
 }
 
@@ -2821,6 +2840,7 @@ img { max-width: 100%; display: block; }
   .mission-grid { grid-template-columns: 1fr; gap: 20px; }
   .about-stats-grid { grid-template-columns: repeat(2, 1fr); gap: 30px 20px; }
   .products-grid { grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); gap: 18px; }
+  .product-card-img { padding: 10px; }
   .product-card-img-icon { padding: 8px; }
   .news-list-card { grid-template-columns: 1fr; }
   .news-list-img { height: 200px; }
