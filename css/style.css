@@ -2934,7 +2934,7 @@ img { max-width: 100%; display: block; }
   .home-products-section .product-card-body p { min-height: 0; font-size: 0.72rem; line-height: 1.5; }
   .home-products-section .product-card-tags { gap: 7px; margin-bottom: 12px; }
   .home-products-section .product-card-body .tag { font-size: 0.62rem; padding: 3px 8px; }
-  .home-products-section .card-link { width: 100%; padding: 9px 10px; font-size: 0.76rem; }
+  .home-products-section .card-link { width: 100%; padding: 9px 10px; font-size: 0.76rem; white-space: nowrap; align-self: stretch; justify-content: center; }
   .about-features { grid-template-columns: 1fr; }
   .about-img-main { height: 220px; }
   .about-img-secondary { width: 62%; left: 8px; bottom: -18px; }
