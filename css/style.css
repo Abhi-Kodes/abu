@@ -1210,6 +1210,14 @@ img { max-width: 100%; display: block; }
   max-width: 980px;
   margin: 0 auto;
 }
+/* Full-width container used when visual/image column is removed */
+.about-text-full {
+  width: 100%;
+}
+.about-text-full .about-text {
+  max-width: 980px;
+  margin: 0 auto;
+}
 .about-strip .about-feature-text h4 {
   font-family: 'Plus Jakarta Sans', sans-serif;
   font-weight: 700;
